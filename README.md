@@ -1,1 +1,1 @@
-DataHub documentations and blogs
+DataHub documentation and blog
