@@ -8,7 +8,7 @@ Here we describe what is auto generated for you: ZIP, CSV and JSON versions.
 
 We auto generate compressed `ZIP` versions of datasets so users can download entire dataset with one click. Let's take a look at "finance-vix" dataset example - https://datahub.io/core/finance-vix :
 
-![](/static/img/docs/download-zip.png)
+![](https://raw.githubusercontent.com/datahq/frontend/master/public/img/download-zip.png)
 
 Once downloaded you would get all available versions of the data along with the descriptor (metadata) file called "datapackage.json".
 
@@ -20,4 +20,4 @@ All datasets on DataHub are "packaged" as data packages (read more about it - ht
 
 For tabular data we auto generate CSV and JSON versions. Again, if we use "finance-vix" example here, we can find download links for CSV and JSON:
 
-![](/static/img/docs/download-csv-json.png)
+![](https://raw.githubusercontent.com/datahq/frontend/master/public/img/download-csv-json.png)
