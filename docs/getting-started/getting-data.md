@@ -17,7 +17,7 @@ https://datahub.io/core/country-list
 
 When you arrive at Country List dataset page, you can find data download links as shown below. You can download data in CSV or JSON versions (or you can get all versions and metadata compressed in zip):
 
-![](https://raw.githubusercontent.com/datahq/frontend/master/public/img/download-links.png)
+![](https://raw.githubusercontent.com/datahq/content/master/assets/img/download-links.png)
 
 ## Perma-URLs for data
 
