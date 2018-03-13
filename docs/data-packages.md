@@ -93,35 +93,25 @@ your own attributes to the `datapackage.json`
 
     {
       "name": "a-unique-human-readable-and-url-usable-identifier",
-      "datapackage_version": "1.0-beta",
       "title": "A nice title",
       "description": "...",
       "version": "2.0",
       "keywords": ["name", "My new keyword"],
       "licenses": [{
-        "url": "http://opendatacommons.org/licenses/pddl/",
-        "name": "Open Data Commons Public Domain",
-        "version": "1.0",
-        "id": "odc-pddl"
+        "path": "http://opendatacommons.org/licenses/pddl/",
+        "title": "Open Data Commons Public Domain",
+        "name": "ODC-PDDL-1.0"
       }]
       "sources": [{
-        "name": "World Bank and OECD",
-        "web": "http://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+        "title": "World Bank and OECD",
+        "path": "http://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
       }],
       "contributors":[ {
-        "name": "Joe Bloggs",
+        "title": "Joe Bloggs",
         "email": "joe@bloggs.com",
-        "web": "http://www.bloggs.com"
+        "path": "http://www.bloggs.com",
+        "role": "author"
       }],
-      "maintainers": [{
-        # like contributors
-      }],
-      "publishers": [{
-        # like contributors
-      }],
-      "dependencies": {
-        "data-package-name": ">=1.0"
-      },
       "resources": [
         {
           ... see below ...
