@@ -1,4 +1,6 @@
-DataHub documentation
+This is a repository for DataHub documentation - https://datahub.io/docs
+
+Please feel free to open a pull requests, if there's anything you feel we could do better!
 
 ## Learn how to use DataHub!
 
@@ -26,5 +28,3 @@ DataHub documentation
 - [Preview tables for your data](/docs/features/preview-tables-for-your-data.md)
 - [Auto generated csv, json and zip](/docs/features/auto-generated-csv-json-and-zip.md)
 - [API instructions](/docs/features/api.md)
-
-## 
