@@ -13,15 +13,24 @@ We want to make data better, together.
 
 </div>
 
-For over a decade we've been creating tools and applications for data. We built CKAN, the world's leading data portal platform that powers sites like data.gov and data.gov.uk. We've worked for companies and organizations like Google. We've helped create the open data movement from the ground up.
+We're passionate about data. Passionate about its power to help us understand and shape our societies. And we want to democratise that power by giving more people access to quality data and tooling.
+
+Everyone who has worked with data as much as we have, knows it takes far too many hours of tedious wrangling before it becomes usable for generating actual insight. 
+
+We want to change that – both for ourselves and everyone else.
+
+For over a decade we've been creating tools and applications for data. We built CKAN, the world's leading data portal platform that powers sites like [data.gov](http://data.gov/) and [data.gov.uk](http://data.gov.uk/). We've worked for companies and organizations like Google. We've helped create the open data movement from the ground up.
 
 Our work on the DataHub is the culmination of everything we've done so far, and the distillation of everything we've learnt.
 
-DataHub and its tooling represents our vision for a next generation platform for data management and automation. A platform that transforms your ability to create and use quality data. The result for you or your organization: dramatic improvements in ease, speed and reliability.
+As technology, DataHub represents our vision for data management and automation. It's a tool for transforming our ability to create and use quality data, bringing dramatic improvements in ease, speed and reliability.
 
-Ultimately, we want to revolutionize how we work with data as a community, making it dramatically faster, easier and better to turn data into insight.
+As a community, we want DataHub to be a home for people passionate about data like us. A place to discover and share high quality datasets, to connect with others and to share knowledge.
 
-And to do we are building a thriving, sustainable business that treats its members, users and community, fairly, transparently and with integrity.
+Ultimately, we want to revolutionize how we work with data as a community. How we collaborate to create and curate datasets. We want to make it faster, easier and more reliable to use and share high quality data and [data-driven] insight.
+
+And, finally, to do this we are committed to building a thriving, sustainable business that treats its members, users and community fairly, transparently and integrously.
+
 
 ### About the Founders
 
