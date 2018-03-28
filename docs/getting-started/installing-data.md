@@ -132,4 +132,10 @@ CBOE Volatility Index (VIX) time-series dataset including daily open, close,
 high and low ...
 ```
 
-You can learn more about **data** tool here - http://datahub.io/docs/features/data-cli.
+You can learn more about **data** tool [here](http://datahub.io/docs/features/data-cli).
+
+## Next step - publish data
+
+As you now have everything setup, you can try to learn how to publish data - follow [these instructions](https://datahub.io/docs/getting-started/publishing-data). Here is the preview of how easy it is:
+
+[GIF of pushing process]
