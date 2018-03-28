@@ -22,84 +22,48 @@ You can also install it from `NPM` as follows:
 
 1. Go to the [releases page](/download)
 2. Download the pre-built binary for your platform (MacOS, LinuxOS x64 or Windows)
-3. Follow instructions for your OS below
+3. Uncompress, make it executable and place into your `$PATH` (see below for your OS)
 
 ### MacOS
 
-Uncompress downloaded asset:
-
-    ```bash
-    gunzip -f data-macos.gz
-    ```
-
-Make it executable:
-
-    ```bash
-    chmod +x data-macos
-    ```
-
-Move the binary into your `$PATH` e.g. on MacOS you could move to `/usr/local/bin/`:
-
-    ```bash
-    mv data-macos /usr/local/bin/data
-    ```
-
-and now proceed further to verify everything is working.
+```bash
+gunzip -f data-macos.gz
+chmod +x data-macos
+mv data-macos /usr/local/bin/data
+```
 
 ### Linux
 
-Uncompress downloaded asset:
-
-    ```bash
-    gunzip -f data-linux.gz
-    ```
-
-Make it executable:
-
-    ```bash
-    chmod +x data-linux
-    ```
-
-Move the binary into your `$PATH`:
-
-    ```bash
-    mv data-linux /usr/local/bin/data
-    ```
+```bash
+gunzip -f data-linux.gz
+chmod +x data-linux
+mv data-linux /usr/local/bin/data
+```
 
 :::info
 For Linux users, if you encounter errors related to location of `xdg-open` package. Use the following command to copy it from `/usr/bin/xdg-open` to `/usr/local/bin/xdg-open`:
 
-    ```bash
-    cp /usr/bin/xdg-open /usr/local/bin/xdg-open
-    ```
+```bash
+cp /usr/bin/xdg-open /usr/local/bin/xdg-open
+```
 :::
-
-and now proceed further to verify everything is working.
 
 ### Windows
 
-Uncompress downloaded asset (this is just a suggestion - you can uncompress using your preferred way):
+This is the suggestion - you can uncompress using your preferred way. The path may change depending on your OS distribution and configurations:
 
-    ```bash
-    gzip -d data-win.exe.gz
-    ```
-
-Move the binary into your `$PATH` e.g. on Mac you could move to `/usr/local/bin/`:
-
-    ```bash
-    # The path may change depending on your OS distribution and configurations:
-    move data-win.exe "C:\Windows\System32\data.exe"
-    ```
-
-and now proceed further to verify everything is working.
+```bash
+gzip -d data-win.exe.gz
+move data-win.exe "C:\Windows\System32\data.exe"
+```
 
 ## Verifying
 
 To test that it is installed correctly run:
 
-    ```bash
-    data --version
-    ```
+```bash
+data --version
+```
 
 This should output a version number, e.g.:
 
@@ -109,9 +73,9 @@ This should output a version number, e.g.:
 
 You can also run `help` command to see how to use this tool:
 
-    ```bash
-    data --help
-    ```
+```bash
+data --help
+```
 
 ## A first step
 
