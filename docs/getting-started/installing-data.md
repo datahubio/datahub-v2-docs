@@ -7,8 +7,16 @@ This guide will cover how to install the **data** tool and verify that it is wor
 
 There are two options for installation:
 
-1. Installing pre-built binaries. These have no dependencies and will work "out of the box".
-2. Install via NPM: you need to have node (>= v7.6) and NPM installed.
+1. Install via NPM: you need to have node (>= v7.6) and NPM installed.
+2. Installing pre-built binaries. These have no dependencies and will work "out of the box".
+
+## Installing via NPM
+
+You can also install it from `NPM` as follows:
+
+    ```bash
+    npm install -g data-cli
+    ```
 
 ## Installing binaries
 
@@ -84,14 +92,6 @@ Move the binary into your `$PATH` e.g. on Mac you could move to `/usr/local/bin/
     ```
 
 and now proceed further to verify everything is working.
-
-## Installing via NPM
-
-You can also install it from `NPM` as follows:
-
-```bash
-$ npm install -g data-cli
-```
 
 ## Verifying
 
