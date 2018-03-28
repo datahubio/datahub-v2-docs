@@ -97,15 +97,21 @@ and now proceed further to verify everything is working.
 
 To test that it is installed correctly run:
 
-```bash
-$ data --version
+    ```bash
+    data --version
+    ```
+
+This should output a version number, e.g.:
+
+```cli-output
+0.8.9
 ```
 
-This should output a version number, for example on my machine it shows:
+You can also run `help` command to see how to use this tool:
 
-```
-0.6.3
-```
+    ```bash
+    data --help
+    ```
 
 ## A first step
 
