@@ -14,9 +14,9 @@ There are two options for installation:
 
 You can also install it from `NPM` as follows:
 
-    ```bash
-    npm install -g data-cli
-    ```
+```bash
+npm install -g data-cli
+```
 
 ## Installing binaries
 
@@ -41,11 +41,9 @@ mv data-linux /usr/local/bin/data
 ```
 
 :::info
-For Linux users, if you encounter errors related to location of `xdg-open` package. Use the following command to copy it from `/usr/bin/xdg-open` to `/usr/local/bin/xdg-open`:
+If you encounter errors related to location of `xdg-open` package, following may help:
 
-```bash
-cp /usr/bin/xdg-open /usr/local/bin/xdg-open
-```
+`cp /usr/bin/xdg-open /usr/local/bin/xdg-open`
 :::
 
 ### Windows
@@ -102,4 +100,4 @@ You can learn more about **data** tool [here](http://datahub.io/docs/features/da
 
 As you now have everything setup, you can try to learn how to publish data - follow [these instructions](https://datahub.io/docs/getting-started/publishing-data). Here is the preview of how easy it is:
 
-[GIF of pushing process]
+![](https://raw.githubusercontent.com/datahq/datahub-content/master/assets/img/push.gif)
