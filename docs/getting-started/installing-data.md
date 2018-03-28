@@ -7,49 +7,87 @@ This guide will cover how to install the **data** tool and verify that it is wor
 
 There are two options for installation:
 
-1. Installing pre-built binaries. These have no dependencies and will work "out of the box"
-2. Install via npm: if you have node (>= v7.6) and npm installed you can install via npm
+1. Installing pre-built binaries. These have no dependencies and will work "out of the box".
+2. Install via NPM: you need to have node (>= v7.6) and NPM installed.
 
 ## Installing binaries
 
 1. Go to the [releases page](/download)
 2. Download the pre-built binary for your platform (MacOS, LinuxOS x64 or Windows)
-3. Uncompress downloaded asset
+3. Follow instructions for your OS below
+
+### MacOS
+
+Uncompress downloaded asset:
 
     ```bash
-    # MacOS and Linux:
-    $ gunzip -f data-{os-distribution}.gz
-
-    # Windows:
-    $ gzip -d data-win.exe.gz
+    gunzip -f data-macos.gz
     ```
-4. Make it executable
+
+Make it executable:
 
     ```bash
-    # MacOS and Linux only:
-    $ chmod +x data-{os-distribution}
+    chmod +x data-macos
     ```
-5. Move the binary into your `$PATH` e.g. on Mac you could move to `/usr/local/bin/`
+
+Move the binary into your `$PATH` e.g. on MacOS you could move to `/usr/local/bin/`:
 
     ```bash
-    # MacOS and Linux:
-    $ mv data-{os-distribution} /usr/local/bin/data
+    mv data-macos /usr/local/bin/data
+    ```
 
-    # Windows (the path may change depending on your OS distribution and configurations):
-    $ move data-win.exe "C:\Windows\System32\data.exe"
+and now proceed further to verify everything is working.
+
+### Linux
+
+Uncompress downloaded asset:
+
+    ```bash
+    gunzip -f data-linux.gz
+    ```
+
+Make it executable:
+
+    ```bash
+    chmod +x data-linux
+    ```
+
+Move the binary into your `$PATH`:
+
+    ```bash
+    mv data-linux /usr/local/bin/data
     ```
 
 :::info
-For linux users, if you encounter errors related to location of `xdg-open` package. Use the following command to copy it from `/usr/bin/xdg-open` to `/usr/local/bin/xdg-open`:
+For Linux users, if you encounter errors related to location of `xdg-open` package. Use the following command to copy it from `/usr/bin/xdg-open` to `/usr/local/bin/xdg-open`:
 
-```bash
-$ cp /usr/bin/xdg-open /usr/local/bin/xdg-open
-```
+    ```bash
+    cp /usr/bin/xdg-open /usr/local/bin/xdg-open
+    ```
 :::
 
-## Installing via npm
+and now proceed further to verify everything is working.
 
-You can also install it from `npm` as follows:
+### Windows
+
+Uncompress downloaded asset (this is just a suggestion - you can uncompress using your preferred way):
+
+    ```bash
+    gzip -d data-win.exe.gz
+    ```
+
+Move the binary into your `$PATH` e.g. on Mac you could move to `/usr/local/bin/`:
+
+    ```bash
+    # The path may change depending on your OS distribution and configurations:
+    move data-win.exe "C:\Windows\System32\data.exe"
+    ```
+
+and now proceed further to verify everything is working.
+
+## Installing via NPM
+
+You can also install it from `NPM` as follows:
 
 ```bash
 $ npm install -g data-cli
