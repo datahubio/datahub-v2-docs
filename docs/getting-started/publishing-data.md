@@ -29,11 +29,9 @@ which saves `sample.csv` file in the current working directory. You can preview 
 data cat sample.csv
 ```
 
-**Note:** *It will validate your data prior to  publishing, if everything is fine - otherwise you'd get validation errors*
-
 ## Publish the data
 
-**Note:** *you will need to be logged in to publish data on datahub. It's simple and easy just type **data login** and follow instructions*
+**Note:** *you need to be logged in to publish data on DataHub. It's simple and easy - just type **data login** and follow instructions.*
 
 Putting your data online is now just one simple command: `data push [path]`
 
@@ -67,7 +65,7 @@ Here is the GIF of the full process including login:
 
 ![](https://raw.githubusercontent.com/datahq/datahub-content/master/assets/img/push-full.gif)
 
-**Note:** *by default, it is **unlisted**, meaning it will not appear in search results. Use **published** flag to make it publicly available*
+**Note:** *by default, the dataset is **unlisted**, meaning it will not appear in search results. Use **published** flag to make it publicly available or **private** flag to restrict access.*
 
 ```
 data push sample.csv --published
