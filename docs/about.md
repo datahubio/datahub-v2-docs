@@ -8,8 +8,8 @@ We want to make data better, together.
 
 <div style="text-align: center;">
 
-  <img src="https://www.gravatar.com/avatar/cd511289b5773fff5e7efe328846eef3?s=300" class="avatar img-circle img-responsive" style="margin: 0; margin-right: 10px; width: 30px;" /> Adam Kariv ([@adam.kariv](/adam.kariv))
-  <img src="https://www.gravatar.com/avatar/36661def37f62e4130670ab75e06465a?s=300" class="avatar img-circle img-responsive" style="margin: 0 15px; width: 30px;" /> Rufus Pollock ([@rufuspollock](/rufuspollock))
+  <img src="https://www.gravatar.com/avatar/cd511289b5773fff5e7efe328846eef3?s=300" class="avatar img-circle img-responsive" style="margin: 0; margin-right: 4px; width: 30px;" /> Adam Kariv ([@adam.kariv](/adam.kariv))
+  <img src="https://www.gravatar.com/avatar/36661def37f62e4130670ab75e06465a?s=300" class="avatar img-circle img-responsive" style="margin: 0 4px 0 30px; width: 30px;" /> Rufus Pollock ([@rufuspollock](/rufuspollock))
 
 </div>
 
@@ -34,7 +34,15 @@ And, finally, to do this we are committed to building a thriving, sustainable bu
 
 ### About the Founders
 
-Rufus is an entrepeneur and technologist who has worked on open data and data systems for over fifteen years with governments, businesses and non-profits all over the world. He is Founder and President of Open Knowledge, Founder of Datopian and an Ashoka and Shuttleworth Fellow. He studied Mathematics at the University of Cambridge, going on to obtain a PhD in Economics and become a research fellow.
+<h4>
+  <img src="https://www.gravatar.com/avatar/36661def37f62e4130670ab75e06465a?s=300" class="avatar img-circle img-responsive" style="margin: 0; margin-right: 30px; width: 100px;" /> Rufus Pollock
+</h4>
 
-Adam is an experienced technologist and open data activist, with over 25 years of experience in a wide range of areas from embedded systems, mobile applications, scalable services to big data analysis and UI design. He studied Computer Science, Physics and Mathematics at the Hebrew University in Jerusalem. He has worked and consulted at Google and a variety of Israeli start-up companies as a CTO, Software Architect and platform specialist.
+Rufus Pollock is an entrepeneur and technologist who has worked on data platforms and open data for over fifteen years with governments, businesses and non-profits all over the world. He is Founder and President of Open Knowledge, Founder of Datopian and an Ashoka and Shuttleworth Fellow. He studied Mathematics at the University of Cambridge, going on to obtain a PhD in Economics and become a research fellow.
+
+<h4>
+  <img src="https://www.gravatar.com/avatar/cd511289b5773fff5e7efe328846eef3?s=300" class="avatar img-circle img-responsive" style="margin: 0; margin-right: 30px; width: 100px;" /> Adam Kariv
+</h4>
+
+Adam Kariv is an experienced technologist and open data activist, with over 25 years of experience in a wide range of areas from embedded systems, mobile applications, scalable services to big data analysis and UI design. He studied Computer Science, Physics and Mathematics at the Hebrew University in Jerusalem. He has worked and consulted at Google and a variety of Israeli start-up companies as a CTO, Software Architect and platform specialist.
 
