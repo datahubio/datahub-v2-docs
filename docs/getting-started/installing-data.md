@@ -7,52 +7,52 @@ This guide will cover how to install the **data** tool and verify that it is wor
 
 There are two options for installation:
 
-1. Installing pre-built binaries. These have no dependencies and will work "out of the box"
-2. Install via npm: if you have node (>= v7.6) and npm installed you can install via npm
+1. Install via NPM: you need to have node (>= v7.6) and NPM installed.
+2. Installing pre-built binaries. These have no dependencies and will work "out of the box".
+
+## Installing via NPM
+
+You can also install it from `NPM` as follows:
+
+```bash
+npm install -g data-cli
+```
 
 ## Installing binaries
 
 1. Go to the [releases page](/download)
 2. Download the pre-built binary for your platform (MacOS, LinuxOS x64 or Windows)
-3. Uncompress downloaded asset
+3. Uncompress, make it executable and place into your `$PATH` (see below for your OS)
 
-    ```bash
-    # MacOS and Linux:
-    $ gunzip -f data-{os-distribution}.gz
+### MacOS
 
-    # Windows:
-    $ gzip -d data-win.exe.gz
-    ```
-4. Make it executable
+```bash
+gunzip -f data-macos.gz
+chmod +x data-macos
+mv data-macos /usr/local/bin/data
+```
 
-    ```bash
-    # MacOS and Linux only:
-    $ chmod +x data-{os-distribution}
-    ```
-5. Move the binary into your `$PATH` e.g. on Mac you could move to `/usr/local/bin/`
+### Linux
 
-    ```bash
-    # MacOS and Linux:
-    $ mv data-{os-distribution} /usr/local/bin/data
-
-    # Windows (the path may change depending on your OS distribution and configurations):
-    $ move data-win.exe "C:\Windows\System32\data.exe"
-    ```
+```bash
+gunzip -f data-linux.gz
+chmod +x data-linux
+mv data-linux /usr/local/bin/data
+```
 
 :::info
-For linux users, if you encounter errors related to location of `xdg-open` package. Use the following command to copy it from `/usr/bin/xdg-open` to `/usr/local/bin/xdg-open`:
+If you encounter errors related to location of `xdg-open` package, following may help:
 
-```bash
-$ cp /usr/bin/xdg-open /usr/local/bin/xdg-open
-```
+`cp /usr/bin/xdg-open /usr/local/bin/xdg-open`
 :::
 
-## Installing via npm
+### Windows
 
-You can also install it from `npm` as follows:
+This is the suggestion - you can uncompress using your preferred way. The path may change depending on your OS distribution and configurations:
 
 ```bash
-$ npm install -g data-cli
+gzip -d data-win.exe.gz
+move data-win.exe "C:\Windows\System32\data.exe"
 ```
 
 ## Verifying
@@ -60,13 +60,19 @@ $ npm install -g data-cli
 To test that it is installed correctly run:
 
 ```bash
-$ data --version
+data --version
 ```
 
-This should output a version number, for example on my machine it shows:
+This should output a version number, e.g.:
 
+```cli-output
+0.8.9
 ```
-0.6.3
+
+You can also run `help` command to see how to use this tool:
+
+```bash
+data --help
 ```
 
 ## A first step
@@ -88,4 +94,10 @@ CBOE Volatility Index (VIX) time-series dataset including daily open, close,
 high and low ...
 ```
 
-You can learn more about **data** tool here - http://datahub.io/docs/features/data-cli.
+You can learn more about **data** tool [here](http://datahub.io/docs/features/data-cli).
+
+## Next step - publish data
+
+As you now have everything setup, you can try to learn how to publish data - follow [these instructions](https://datahub.io/docs/getting-started/publishing-data). Here is the preview of how easy it is:
+
+![](https://raw.githubusercontent.com/datahq/datahub-content/master/assets/img/push.gif)
