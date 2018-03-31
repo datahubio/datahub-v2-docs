@@ -9,6 +9,14 @@ title: Data's Command Line Interface
 * Get information about particular data files and datasets both locally and remotely including those on the DataHub
 * Validate your data to ensure its quality
 
+[[toc]]
+
+# Install
+
+See [Install `data`][install].
+
+[install]: /docs/getting-started/installing-data
+
 # Usage
 
 You can see the latest commands and get help by doing:
@@ -38,3 +46,14 @@ data login
 ```
 
 This will carry out login / signup entirely from the command line.
+
+## `init`
+
+`data` has an `init command that will automatically generate Data Package metadata including scanning the current directory for data files and inferring [table schema] for tabular files.
+
+Find out more by running:
+
+```
+data help init
+```
+

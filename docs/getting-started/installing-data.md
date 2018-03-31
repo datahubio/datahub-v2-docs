@@ -7,24 +7,16 @@ This guide will cover how to install the **data** tool and verify that it is wor
 
 There are two options for installation:
 
-1. Install via NPM: you need to have node (>= v7.6) and NPM installed.
-2. Installing pre-built binaries. These have no dependencies and will work "out of the box".
+1. Installing pre-built binaries. These have no dependencies and will work "out of the box".
+2. Install via NPM: you need to have node (>= v7.6) and NPM installed.
 
-## Installing via NPM
-
-You can also install it from `NPM` as follows:
-
-```bash
-npm install -g data-cli
-```
-
-## Installing binaries
+# Installing binaries
 
 1. Go to the [releases page](/download)
 2. Download the pre-built binary for your platform (MacOS, LinuxOS x64 or Windows)
 3. Uncompress, make it executable and place into your `$PATH` (see below for your OS)
 
-### MacOS
+## MacOS
 
 ```bash
 gunzip -f data-macos.gz
@@ -32,7 +24,7 @@ chmod +x data-macos
 mv data-macos /usr/local/bin/data
 ```
 
-### Linux
+## Linux
 
 ```bash
 gunzip -f data-linux.gz
@@ -46,7 +38,7 @@ If you encounter errors related to location of `xdg-open` package, following may
 `cp /usr/bin/xdg-open /usr/local/bin/xdg-open`
 :::
 
-### Windows
+## Windows
 
 This is the suggestion - you can uncompress using your preferred way. The path may change depending on your OS distribution and configurations:
 
@@ -55,9 +47,18 @@ gzip -d data-win.exe.gz
 move data-win.exe "C:\Windows\System32\data.exe"
 ```
 
-## Verifying
+# Installing via NPM
 
-To test that it is installed correctly run:
+You can also install it from `NPM` as follows:
+
+```bash
+npm install -g data-cli
+```
+
+
+# Verifying the Installation
+
+To test that `data` has installed correctly run:
 
 ```bash
 data --version
@@ -75,7 +76,7 @@ You can also run `help` command to see how to use this tool:
 data --help
 ```
 
-## A first step
+# A first step
 
 Finally, and as a last test, you can try out your first `❒ data` command: `info`.
 
@@ -94,10 +95,13 @@ CBOE Volatility Index (VIX) time-series dataset including daily open, close,
 high and low ...
 ```
 
-You can learn more about **data** tool [here](http://datahub.io/docs/features/data-cli).
+[Learn more about **data** tool here &raquo;][more]
 
-## Next step - publish data
+[more]: /docs/features/data-cli
+
+# Next step - publish data
 
 As you now have everything setup, you can try to learn how to publish data - follow [these instructions](https://datahub.io/docs/getting-started/publishing-data). Here is the preview of how easy it is:
 
 ![](https://raw.githubusercontent.com/datahq/datahub-content/master/assets/img/push.gif)
+
