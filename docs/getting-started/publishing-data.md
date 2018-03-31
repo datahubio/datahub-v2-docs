@@ -20,7 +20,7 @@ You can read and learn about CSV in [this post](/docs/data-packages/csv).
 We have a sample CSV file for this tutorial. Let's get that file using our `data` tool:
 
 ```bash
-data get https://datahub.io/examples/sample/r/0.csv
+data get https://datahub.io/examples/sample/r/sample.csv
 ```
 
 which saves `sample.csv` file in the current working directory. You can preview how it looks like:
