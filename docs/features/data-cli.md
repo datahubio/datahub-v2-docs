@@ -1,5 +1,5 @@
 ---
-title: Data's Command Line Interface
+title: "data: Command Line Tool"
 ---
 
 `data` is the command-line tool to prepare, push and get data. With `data` you will be able to:
