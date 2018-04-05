@@ -1,6 +1,8 @@
 ---
-Title: Datahub JS SDK Tutorial
+title: Datahub JS SDK Tutorial
 ---
+
+This tutorial covers information you need to create the data driven project that will use the DataHub to store the data.
 
 [[toc]]
 
@@ -10,11 +12,7 @@ The [DataHub](http://datahub.io/) platform stores a lot of different datasets - 
 
 You can also store and share your own datasets on the DataHub
 
-As a programmer, you may want to automate the process of getting or storing the data. Also you may want to integrate your project and the DataHub.
-
-This tutorial will cover information you need to create the data driven project that will use the DataHub to get or store the data.
-
-Let's explore the tutorial together below.
+As a programmer, you may want to automate the process of getting or storing the data. Also you may want to integrate your project and the DataHub. This tutorial will help you.
 
 **Important notes:**
 - You need to use **Node version > 7.6**
