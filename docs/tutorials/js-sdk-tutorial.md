@@ -2,9 +2,12 @@
 Title: Datahub JS SDK Tutorial
 ---
 
+[[toc]]
+
 ## Introduction
 
 The [DataHub](http://datahub.io/) platform stores a lot of different datasets - which are packages of useful data alongside with the description (here is [the dataset specification](https://frictionlessdata.io/docs/data-package/)). The data, stored on the DataHub, has a nice structure, views and a description that help people to get insights.
+
 You can also store and share your own datasets on the DataHub
 
 As a programmer, you may want to automate the process of getting or storing the data. Also you may want to integrate your project and the DataHub.
@@ -51,7 +54,7 @@ Let's explore some of the `datahub-client` features more deeply below.
 1. Here is a [Sample dataset on Github](https://github.com/datasets/finance-vix/archive/master.zip).  Please, download and unpack it.
 
 2. Get the user credentials from the server (token and ownerid):
-   - install our cli tool: [installation instructions](https://datahub.io/docs/getting-started/installing-data)
+   - install our cli tool: `npm install -g data-cli`
    - run `data login` and login on the DataHub in the browser
    - run `cat ~/.config/datahub/config.json`
 ```
@@ -83,7 +86,7 @@ async function pushDataset(datasetPath){
    const datahub = new DataHub(datahubConfigs)
 
    // now use the datahub instance to push the data
-   const res = await datahub.push(dataset, {findability: 'unlisted'})
+   const res = await datahub.push(dataset, {findability: 'published'})
    console.log(res)
 }
 ```
@@ -107,35 +110,18 @@ If you get any errors - change the debug option: `datahubConfigs = {debug: true,
 ## Get data from the datahub
 
 Getting data is much easier, because you don't need to authorize for it (except the private datasets).
-
-You can get a dataset using only the `data.js` library:
 ```javascript
-const {Dataset} = require('data.js')
+const datahub = require('datahub-client');
+const {Dataset} = require('data.js');
 
-const descriptorUrl = 'https://datahub.io/core/finance-vix/datapackage.json'
-const dataset = await Dataset.load(descriptorUrl)
+const dataset = await Dataset.load(datasetUrl);
+const resources = await datahub.get(dataset);
 ```
-Then you can use the data from the dataset in different ways:
-- get the list of all resources:
-```javascript
-for (let res of dataset.resources) {
-  console.log(res._descriptor.name)
-}
-```
+`Dataset.load()` takes a path to the data package and returns a dataset object: https://github.com/datahq/data.js#datasets
 
-- get all tabular data (if exists):
-```javascript
-for (let res of dataset.resources) {
-  if (res._descriptor.format === "csv") {
-    // Get a raw stream
-    const stream = await res.stream()
-    // entire file as a buffer (be careful with large files!)
-    const buffer = await res.buffer
-    // print data
-    stream.pipe(process.stdout)
-  }
-}
-```
+`datahub-client.get()` method accept the dataset object and returns an array with resources from it.
+
+Each resource in the resources is the special File object from the `data.js` lib: https://github.com/datahq/data.js#files
 
 ## The end
 
