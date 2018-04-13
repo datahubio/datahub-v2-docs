@@ -6,35 +6,40 @@ title: "data: Command Line Tool"
 
 ## Overview
 
-**"Data-cli"** is an important part of the [DataHub](https://datahub.io/docs/about) project. This is a command line tool, that helps you to manipulate your data (as `git` manipulates the code).
+**`Data`** is an important part of the [DataHub](https://datahub.io/docs/about) project. This is a command line tool that helps you to manipulate your data (as `git` manipulates the code).
 
-For example you have a set of data as a result of your work, let it be few data-files and a description. And you want to share it with your colleagues. With the **"data-cli"** you just need to:
-```shell
-cd data-folder
-data init  # convent my data files into the data-package
+For example you have a set of data as a result of your work, let it be few data files and a description. And you want to share it with your colleagues. With the **`data`** you just need to:
+
+```bash
+$ cd data-folder
+$ data init  # generate datapackage.json for my data files
 > "Answer a few questions here, e.g. dataset name, files to include, etc"
-data push  # upload the dataset onto a DataHub
+$ data push  # upload the dataset onto the DataHub
 > "As a result you'll got a link to share:
 http://datahub.io/user-name/data-package-name
 ```
-That's it! Your data is online. You can make your data public or private, add some pretty graphics, and many more. Please read DataHub.io/docs for details.
+
+That's it! Your data is online. You can make your data public or private, add some pretty graphics, and many more. Please read https://datahub.io/docs for details.
 
 ## Usage examples:
 
-Here we show examples of usage for common `data` commands. To see the full command documentation - click on the command name, or proceed to the [help pages](https://github.com/datahq/data-cli/tree/master/docs).
+Here we show examples of usage for common `data` commands. To see the full command documentation click on the command name or proceed to the [help pages](https://github.com/datahq/data-cli/tree/master/docs).
 
 ### data login
 
-You should login at the first use of data-cli:
+You should login at the first use of `data` tool:
+
 ```bash
 $ data login
 ? Login with... Github
 > Opening browser and waiting for you to authenticate online
 > You are logged in!
 ```
+
 ### [data push](https://github.com/datahq/data-cli/blob/master/docs/push.md)
 
-Upload a dataset or a separate file on the DataHub:
+Upload a dataset or a separate file to the DataHub:
+
 ```bash
 $ data push mydata.csv
 ? Please, confirm name for this dataset:
@@ -45,19 +50,23 @@ Mydataset Mydataset
   your data is published!
 🔗  https://datahub.io/myname/mydataset/v/1 (copied to clipboard)
 ```
-**Note:** by default, findability flag for your dataset is set to `--unlisted`, meaning nobody else is able to see it, except you. Use `--public` flag to make it publicly available
+
+**Note:** by default, findability flag for your dataset is set to `--unlisted`, meaning nobody else is able to see it, except you. Use `--public` flag to make it publicly available.
 
 ### [data get](https://github.com/datahq/data-cli/blob/master/docs/get.md)
 
 Get a dataset from the DataHub or GitHub:
+
 ```bash
 $ data get http://datahub.io/core/gold-prices
 Time elapsed: 1.72 s
 Dataset/file is saved in "core/gold-prices"
 ```
+
 ### [data info](https://github.com/datahq/data-cli/blob/master/docs/info.md)
 
 Shows info about the dataset (local or remote):
+
 ```bash
 $ data info http://datahub.io/core/gold-prices
 # Gold Prices (Monthly in USD)
@@ -87,9 +96,11 @@ Monthly gold prices since 1950 in USD (London market). Data is sourced from the 
 ### Licence
 ...
 ```
+
 ### [data cat](https://github.com/datahq/data-cli/blob/master/docs/cat.md)
 
-Works similar as Unix `cat` command but works with remote resources and can convert tabular data into different formats:
+Works similar as Unix `cat` command but works with remote resources and displays tabular data in a nice ascii table:
+
 ```bash
 $ data cat http://datahub.io/core/gold-prices/r/0.csv
 ┌──────────────────────────────────────┬──────────────────────────────────────┐
@@ -101,7 +112,9 @@ $ data cat http://datahub.io/core/gold-prices/r/0.csv
 
 ...........
 ```
+
 You can also convert tabular data into different formats (the source could be remote as well):
+
 ```bash
 $ data cat prices.csv prices.md
 > All done! Your data is saved in "prices.md"
@@ -111,9 +124,11 @@ user@pc:~/Downloads$ cat prices.md
 | 1950-02-01 | 34.730   |
 | 1950-03-01 | 34.730   |
 ```
+
 ### [data init](https://github.com/datahq/data-cli/blob/master/docs/init.md)
 
 Data-cli has an `init` command that will automatically generate Data Package metadata including scanning the current directory for data files and inferring [table schema] for tabular files:
+
 ```bash
 $ data init
 This process initializes a new datapackage.json file.
@@ -170,17 +185,18 @@ datapackage.json file is saved in /home/user/Downloads/datapackage.json
 $ data validate path/to/correct/datapackage
 > Your Data Package is valid!
 ```
+
 ```bash
 $ data validate path/to/invalid-data
 > Error! Validation has failed for "missing-column"
 > Error! The column header names do not match the field names in the schema on line 2
-
 ```
 
 ### data help
 
 Also you can run "help" command in your terminal to see command docs:
-```shell
+
+```bash
 $ data help
 'General description'
 $ data help push
