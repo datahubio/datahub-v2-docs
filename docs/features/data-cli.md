@@ -36,7 +36,9 @@ $ data login
 > You are logged in!
 ```
 
-### [data push](https://github.com/datahq/data-cli/blob/master/docs/push.md)
+### data push
+
+*Find out more about `data push` - https://github.com/datahq/data-cli/blob/master/docs/push.md*
 
 Upload a dataset or a separate file to the DataHub:
 
@@ -53,7 +55,9 @@ Mydataset Mydataset
 
 **Note:** by default, findability flag for your dataset is set to `--unlisted`, meaning nobody else is able to see it, except you. Use `--public` flag to make it publicly available.
 
-### [data get](https://github.com/datahq/data-cli/blob/master/docs/get.md)
+### data get
+
+*Find out more about `data get` - https://github.com/datahq/data-cli/blob/master/docs/get.md*
 
 Get a dataset from the DataHub or GitHub:
 
@@ -63,7 +67,9 @@ Time elapsed: 1.72 s
 Dataset/file is saved in "core/gold-prices"
 ```
 
-### [data info](https://github.com/datahq/data-cli/blob/master/docs/info.md)
+### data info
+
+*Find out more about `data info` - https://github.com/datahq/data-cli/blob/master/docs/info.md*
 
 Shows info about the dataset (local or remote):
 
@@ -97,7 +103,9 @@ Monthly gold prices since 1950 in USD (London market). Data is sourced from the 
 ...
 ```
 
-### [data cat](https://github.com/datahq/data-cli/blob/master/docs/cat.md)
+### data cat
+
+*Find out more about `data cat` - https://github.com/datahq/data-cli/blob/master/docs/cat.md*
 
 Works similar as Unix `cat` command but works with remote resources and displays tabular data in a nice ascii table:
 
@@ -125,7 +133,9 @@ user@pc:~/Downloads$ cat prices.md
 | 1950-03-01 | 34.730   |
 ```
 
-### [data init](https://github.com/datahq/data-cli/blob/master/docs/init.md)
+### data init
+
+*Find out more about `data init` - https://github.com/datahq/data-cli/blob/master/docs/init.md*
 
 Data-cli has an `init` command that will automatically generate Data Package metadata including scanning the current directory for data files and inferring [table schema] for tabular files:
 
@@ -179,7 +189,9 @@ Is that OK - y/n? y
 datapackage.json file is saved in /home/user/Downloads/datapackage.json
 ```
 
-### [data validate](https://github.com/datahq/data-cli/blob/master/docs/validate.md)
+### data validate
+
+*Find out more about `data validate` - https://github.com/datahq/data-cli/blob/master/docs/validate.md*
 
 ```bash
 $ data validate path/to/correct/datapackage
