@@ -28,6 +28,7 @@ All this information is called **metadata** and should be stored alongside with 
 And here comes the idea of [**Data Package**](https://datahub.io/docs/data-packages).
 
 **Data Package** - *is a data plus a meta-information about it.*
+
 Data Package is a simple container format used to describe and package a collection of data. The format provides a simple contract for data interoperability that supports frictionless delivery, installation and management of data.
 
 Data Package stores the meta-information in the special **Descriptor File**. It has [JSON](https://en.wikipedia.org/wiki/JSON) format and a special name: `datapackage.json`. Here you can read a short [descriptor specification](https://frictionlessdata.io/specs/data-package/#specification).
