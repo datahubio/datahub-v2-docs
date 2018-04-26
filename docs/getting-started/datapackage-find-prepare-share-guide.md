@@ -105,9 +105,6 @@ Web APIs often return data in json format, so then you need to analyze the json 
 
 If the API returns a CSV file - you can save this file or load it directly into your program.
 
-### 4. Scrape data from a HTML page or a PDF document
-
-@Branko, this part is for you ;)
 
 # clean and transform data (and why)
 
@@ -118,12 +115,12 @@ Let's make this data clean and nice, so it becomes machine-friendly and your cus
 ## clean and prepare
 
 Use this check-list:
-- [ ] data files has no comments (move them into README)
-- [ ] data files has no empty rows
-- [ ] tables are unpivoted ([what is pivot and unpivot](https://www.excel-university.com/unpivot-excel-data/))
-- [ ] We prefer using . rather than , to separate decimal values.
-- [ ] If data is not available, you either make that cell as 0 or NaN.
-- [ ] The data package name should be your-package.csv. We rather use `-` to refer to spaces.
+- data files has no comments (move them into README)
+- data files has no empty rows
+- tables are unpivoted ([what is pivot and unpivot](https://www.excel-university.com/unpivot-excel-data/))
+- We prefer using . rather than , to separate decimal values.
+- If data is not available, you either make that cell as 0 or NaN.
+- The data package name should be your-package.csv. We rather use `-` to refer to spaces.
 
 ## use python
 
