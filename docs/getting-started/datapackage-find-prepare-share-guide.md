@@ -235,7 +235,7 @@ That's it. Our goal is reached! We have
 
 Thank you for reading.
 
-### Additional materials
+## Additional materials
 
 Read more about [DataHub command line tool](https://datahub.io/docs/features/data-cli).
 
