@@ -121,7 +121,8 @@ Use this check-list:
 - tables are unpivoted ([what is pivot and unpivot](https://www.excel-university.com/unpivot-excel-data/))
 - We prefer using `.` rather than `,` to separate decimal values.
 - If data is not available, you either make that cell as 0 or NaN.
-- The data package name should be your-package.csv. We rather use `-` to refer to spaces.
+- The Data Package and resources (data files) names should use `-` instead of spaces.
+  e.g. `gold-prices/data/prices.csv`
 
 ## use python
 
