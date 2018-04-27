@@ -52,7 +52,7 @@ If you found a target files in the web, and the data is not updating regularly -
 
 ### 2. automatic download
 
-If the data source is updated regularly, it would be natural to automate the process of getting data, using some script.
+If the data source is updated regularly, it would be natural to write down the process of getting data, using some script (instead of downloading the resources manually each time).
 
 Here is simple example in Python:
 ```python
@@ -72,9 +72,6 @@ wget -O data.csv $SOURCE
 ```
 As a result you'll get the `data.csv` file in the current program directory.
 
-> You also need to setup cronjob to actually automate it (and probably more). Not sure why do we need this part [name=Irakli] 
-> Why not? 50% of processing scripts has a download code.
- [name=Dima]
 
 ### 3. Get data from the API
 
