@@ -68,6 +68,7 @@ data push
 ```
 
 Also you can read this guides:
+- https://datahub.io/docs/data-packages/publish-faq
 - https://datahub.io/docs/getting-started/publishing-data
 - https://datahub.io/docs/getting-started/datapackage-find-prepare-share-guide
 
