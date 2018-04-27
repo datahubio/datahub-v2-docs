@@ -109,7 +109,7 @@ If the API returns a CSV file - you can save this file or load it directly into 
 
 # clean and transform data (and why)
 
-Now you have data, stored on your disk, probably it is a CSV or a XLS file.
+Now you have data, stored on the disk, probably it is a CSV or a XLS file.
 
 Let's make this data clean and nice, so it becomes machine-friendly and your customers could use their programs to analyze and process information automatically.
 
@@ -119,7 +119,7 @@ Use this check-list:
 - data files has no comments (move them into README)
 - data files has no empty rows
 - tables are unpivoted ([what is pivot and unpivot](https://www.excel-university.com/unpivot-excel-data/))
-- We prefer using . rather than , to separate decimal values.
+- We prefer using `.` rather than `,` to separate decimal values.
 - If data is not available, you either make that cell as 0 or NaN.
 - The data package name should be your-package.csv. We rather use `-` to refer to spaces.
 
