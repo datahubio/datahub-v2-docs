@@ -1,5 +1,7 @@
 ---
-Title: FAQ
+title: Markdown - A Short Introduction
+date: 2017-04-27
+author: [Dima German]
 ---
 
 [[toc]]
