@@ -1,5 +1,5 @@
 ---
-title: Markdown - A Short Introduction
+title: FAQ
 date: 2017-04-27
 author: [Dima German]
 ---
