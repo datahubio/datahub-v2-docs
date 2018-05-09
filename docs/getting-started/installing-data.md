@@ -16,6 +16,10 @@ There are two options for installation:
 2. Download the pre-built binary for your platform (MacOS, LinuxOS x64 or Windows)
 3. Uncompress, make it executable and place into your `$PATH` (see below for your OS)
 
+## Windows MSI
+
+If you're using MSI for Windows, you can install it in a standard way and jump to the <a href="#verifying-the-installation">next step</a>.
+
 ## MacOS
 
 ```bash
