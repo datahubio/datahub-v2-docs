@@ -2,68 +2,47 @@
 title: Datahub JS SDK Tutorial
 ---
 
-This tutorial covers information you need to create the data driven project that will use the DataHub to store the data.
+This tutorial helps you to get starting with DataHub JS SDK for data deployment.
 
 [[toc]]
 
 ## Introduction
 
-The [DataHub](http://datahub.io/) platform stores a lot of different datasets - which are packages of useful data alongside with the description (here is [the dataset specification](https://frictionlessdata.io/docs/data-package/)). The data, stored on the DataHub, has a nice structure, views and a description that help people to get insights.
+### Prerequisites
 
-You can also store and share your own datasets on the DataHub
+You need to have NodeJS (`>= 7.6`) and NPM.
 
-As a programmer, you may want to automate the process of getting or storing the data. Also you may want to integrate your project and the DataHub. This tutorial will help you.
+### Libraries
 
-**Important notes:**
-- You need to use **Node version > 7.6**
-- When you see the **await** keyword you should wrap the code in the **async** function.
+The `datahub-client` is a JS library to communicate with the DataHub platform:
 
+https://npmjs.com/package/datahub-client
 
-## Install
+The `data.js` library is a lightweight library providing a standardized interface for accessing data files and datasets:
 
-Add `datahub-client` package into your project:
-```shell
-npm install datahub-client --save
+https://npmjs.com/package/data.js
+
+## Installation
+
+```bash
+npm install datahub-client data.js --save
 ```
-The `datahub-client` is a JS library to communicate with the DataHub and to create and validate datasets. It also includes the `data.js` package.
-`Data.js` provides `Dataset` and `File` classes, that represents a datapackage and a data-file.
 
-
-## Quick overview
-
-After loading 'datahub-client' into your program:
-`const datahub = require('datahub-client')` ,
-you can do things like:
-
-- login to DataHub
-- authenticate with the jwt token
-- push a dataset:
-- get the data from the DataHub:
-- init a dataset
-- validate a dataset
-- convert tabular data files into different formats
-
-Let's explore some of the `datahub-client` features more deeply below.
-
-
-## Push data
+## Deploy data
 
 ### Prepare the test data and user credentials
+
 1. Here is a [Sample dataset on Github](https://github.com/datasets/finance-vix/archive/master.zip).  Please, download and unpack it.
 
-2. Get the user credentials from the server (token and ownerid):
-   - install our cli tool: `npm install -g data-cli`
-   - run `data login` and login on the DataHub in the browser
-   - run `cat ~/.config/datahub/config.json`
+2. Get the user credentials (token, id and username) and set them as environment variables:
+
+```bash
+export token=token id=id username=username
 ```
-{
-  "token": "secure jwt token",
-  "profile": {
-    "id": "userId",
-    /* other user info */
-  }
-}
-```
+
+:::info
+If you don't have them, you need to generate using our [CLI tool](https://datahub.io/download). After running `data login` command, credentials can be found at `~/.config/datahub/config.json`.
+:::
 
 ### Push code example
 
@@ -72,34 +51,33 @@ const {DataHub} = require('datahub-client')
 const {Dataset} = require('data.js')
 
 async function pushDataset(datasetPath){
-   // load dataset that we want to push
-   let dataset = await Dataset.load(datasetPath)
+   // Load dataset that we want to push
+   const dataset = await Dataset.load(datasetPath)
    // Create an instance of the DataHub class, using the data from the user config
-   const datahubConfigs = {
+   const configs = {
      apiUrl: 'http://api.datahub.io/',
-     token: 'secure jwt token',
-     debug: false,
-     ownerid: 'userId',
+     token: process.env.token,
+     ownerid: process.env.id,
+     debug: false
    }
-   const datahub = new DataHub(datahubConfigs)
+   const datahub = new DataHub(configs)
 
-   // now use the datahub instance to push the data
+   // Now use the datahub instance to push the data
    const res = await datahub.push(dataset, {findability: 'published'})
    console.log(res)
 }
+
+pushDataset('path/to/dataset')
 ```
 
-**Note:** findability: could be 'unlisted', 'published' or 'private'
+**Note:** findability: could be 'unlisted', 'published' or 'private'.
 
-Using the function:
-```javascript
-pushDataset('datasetPath')
-```
 This is an example of correct console output:
+
 ```javascript
 { dataset_id: 'username/finance-vix',
   errors: [],
-  flow_id: 'username/finance-vix/40',
+  flow_id: 'username/finance-vix/1',
   success: true }
 ```
 
@@ -107,22 +85,24 @@ If you get any errors - change the debug option: `datahubConfigs = {debug: true,
 
 ## Get data from the datahub
 
-Getting data is much easier, because you don't need to authorize for it (except the private datasets).
-```javascript
-const datahub = require('datahub-client');
-const {Dataset} = require('data.js');
+Getting data is much easier, because you don't need to authorize for it (except for the private datasets).
 
-const dataset = await Dataset.load(datasetUrl);
-const resources = await datahub.get(dataset);
+```javascript
+const datahub = require('datahub-client')
+const {Dataset} = require('data.js')
+
+const dataset = await Dataset.load(datasetUrl)
+const resources = await datahub.get(dataset)
 ```
+
 `Dataset.load()` takes a path to the data package and returns a dataset object: https://github.com/datahq/data.js#datasets
 
-`datahub-client.get()` method accept the dataset object and returns an array with resources from it.
+`datahub.get()` method accept the dataset object and returns an array with resources from it.
 
-Each resource in the resources is the special File object from the `data.js` lib: https://github.com/datahq/data.js#files
+Each resource in the `resources` is the special File object from the `data.js` lib: https://github.com/datahq/data.js#files
 
 ## The end
 
-Congratulations! Your program can now push and get the data from the datahub! To learn how to do a lot of other things, please read the full documentation here: https://github.com/datahq/datahub-client
+Congratulations! Your program can now deploy and get the data from the DataHub! To learn how to do a lot of other things, please read the full documentation here: https://github.com/datahq/datahub-client
 
 For any questions you have - please visit our [gitter channel](https://gitter.im/datahubio/chat).
