@@ -34,37 +34,40 @@ npm install datahub-client data.js --save
 
 1. Here is a [Sample dataset on Github](https://github.com/datasets/finance-vix/archive/master.zip).  Please, download and unpack it.
 
-2. Get the user credentials (token, id and username) and set them as environment variables:
-
-```bash
-export token=token id=id username=username
-```
+2. Make sure you have configurations file at `~/.config/datahub/config.json`.
 
 :::info
-If you don't have them, you need to generate using our [CLI tool](https://datahub.io/download). After running `data login` command, credentials can be found at `~/.config/datahub/config.json`.
+If you don't have it, you need to generate using our [CLI tool](https://datahub.io/download). After running `data login` command, credentials can be found at `~/.config/datahub/config.json`.
 :::
 
 ### Push code example
 
 ```javascript
-const {DataHub} = require('datahub-client')
+const {DataHub, config, authenticate} = require('datahub-client')
 const {Dataset} = require('data.js')
 
-async function pushDataset(datasetPath){
-   // Load dataset that we want to push
-   const dataset = await Dataset.load(datasetPath)
-   // Create an instance of the DataHub class, using the data from the user config
-   const configs = {
-     apiUrl: 'http://api.datahub.io/',
-     token: process.env.token,
-     ownerid: process.env.id,
-     debug: false
-   }
-   const datahub = new DataHub(configs)
+async function pushDataset(datasetPath) {
+  // First, authenticate user
+  const apiUrl = config.get('api')
+  const token = config.get('token')
+  const response = await authenticate(apiUrl, token)
+  if (!response.authenticated) {
+    console.error('Your credentials expired or missing.')
+    return
+  }
+  // Load dataset that we want to push
+  const dataset = await Dataset.load(datasetPath)
+  // Create an instance of the DataHub class, using the data from the user config
+  const configs = {
+   apiUrl,
+   token,
+   ownerid: config.get('profile') ? config.get('profile').id : config.get('id')
+  }
+  const datahub = new DataHub(configs)
 
-   // Now use the datahub instance to push the data
-   const res = await datahub.push(dataset, {findability: 'published'})
-   console.log(res)
+  // Now use the datahub instance to push the data
+  const res = await datahub.push(dataset, {findability: 'unlisted'})
+  console.log(res)
 }
 
 pushDataset('path/to/dataset')
