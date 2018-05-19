@@ -25,8 +25,8 @@ The Data Package approach provides a **very simple**, **web friendly**,
 <div class="row">
 <div class="span2">
 <h3>Full Spec</h3>
-There is a full <b><a href="http://dataprotocols.org/data-packages/">RFC-style specification of Data Package format</a></b>
-on the Data Protocols website to complement this quick introduction.
+There is a full <b><a href="https://frictionlessdata.io/specs/data-package/">RFC-style specification of Data Package format</a></b>
+on the Frictionless Data website to complement this quick introduction.
 </div>
 <div class="span2">
 <h3>Tabular Data</h3>
@@ -84,7 +84,7 @@ Here is a much more extensive example of a datapackage JSON file:
 [full Data Package spec][spec].
 </div>
 
-[spec]: http://dataprotocols.org/data-packages/
+[spec]: https://frictionlessdata.io/specs/data-package/
 
 <div class="alert alert-info">
 <b>Note:</b> the Data Package format is <b>extensible</b> in that it allows you add
