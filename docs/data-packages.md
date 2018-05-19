@@ -135,9 +135,10 @@ your own attributes to the `datapackage.json`
 You list data files in the resources entry of the datapackage.json.
 
     {
-      # one of url or path should be present (you can have both)
+      # path may be a relative file path or a rul
       path: "relative-path-to-file" # e.g. data/mydata.csv
-      url: "online url" # e.g http://mysite.org/some-data.csv
+      # or ... url 
+      path: "online url" # e.g http://mysite.org/some-data.csv
     }
 
 <h3 id="views">Views</h3>
