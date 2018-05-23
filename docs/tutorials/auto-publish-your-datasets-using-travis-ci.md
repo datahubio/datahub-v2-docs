@@ -14,9 +14,9 @@ Please, read through the issue thread here to understand the problem: https://gi
 
 ## Setup
 
-Our goal is to trigger a publishing on every commit to 'master' branch. To do so we'll use the [data] CLI tool for publishing to DataHub, which is available via [NPM]. Below is how the configuration file ('.travis.yml') for Travis-CI would look like:
+Our goal is to trigger a publishing on every commit to 'master' branch. To do so we'll use the [data] CLI tool for interacting with DataHub, which is available via [NPM]. Below is how the configuration file (`.travis.yml`) for Travis-CI would look like:
 
-```yaml=
+```yaml
 language: node_js
 node_js:
   - "8"
@@ -27,10 +27,10 @@ branches:
   - master
 ```
 
-This instructs Travis-CI to install "data" CLI tool via NPM and publish the dataset with "--public" option which makes it publicly available. It assumes that there is a `datapackage.json` file in the root directory of the repository.
+This instructs Travis-CI to install 'data' CLI tool via NPM and publish the dataset with 'public' option which makes it publicly available. It assumes that there is a `datapackage.json` file in the root directory of the repository.
 
 [data]: https://datahub.io/download
-[NPM]: https://www.npmjs.com/
+[NPM]: https://www.npmjs.com/package/data-cli
 
 ## Credentials
 
