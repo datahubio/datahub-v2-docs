@@ -53,7 +53,7 @@ Mydataset Mydataset
 🔗  https://datahub.io/myname/mydataset/v/1 (copied to clipboard)
 ```
 
-**Note:** by default, findability flag for your dataset is set to `--unlisted`, meaning nobody else is able to see it, except you. Use `--public` flag to make it publicly available.
+**Note:** by default, findability flag for your dataset is set to `--public`. Use `--unlisted` flag if you want it to not appear in the search results.
 
 ### data get
 

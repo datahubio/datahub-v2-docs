@@ -65,7 +65,7 @@ Here is the GIF of the full process including login:
 
 ![](https://raw.githubusercontent.com/datahq/datahub-content/master/assets/img/push-full.gif)
 
-**Note:** *by default, the dataset is **unlisted**, meaning it will not appear in search results. Use **published** flag to make it publicly available or **private** flag to restrict access.*
+**Note:** *by default, the dataset is **public**. Use **unlisted** flag to hide it in the search results or **private** flag to restrict access.*
 
 ```
 data push sample.csv --published
