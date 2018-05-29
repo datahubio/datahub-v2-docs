@@ -1,7 +1,7 @@
 ---
 title: FAQ
-date: 2017-04-27
-author: [Dima German]
+date: 2018-04-27
+author: ['Dima German']
 ---
 
 Short answers to frequently asked questions.
