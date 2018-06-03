@@ -13,9 +13,9 @@ We want to make data better, together.
 
 </div>
 
-We're passionate about data. Passionate about its power to help us understand and shape our societies. And we want to democratise that power by giving more people access to quality data and tooling.
+We're passionate about data. Passionate about its power to help us understand and shape our societies. And we want to democratise that power by giving more people, more access to high quality data and tooling.
 
-Everyone who has worked with data as much as we have, knows it takes far too many hours of tedious wrangling before it becomes usable for generating actual insight. 
+Everyone who has worked with data as much as we have, knows it takes far too many hours of tedious searching and wrangling before you have the data you need to generating actual insight. 
 
 We want to change that – both for ourselves and everyone else.
 
@@ -27,7 +27,7 @@ As technology, DataHub represents our vision for data management and automation.
 
 As a community, we want DataHub to be a home for people passionate about data like us. A place to discover and share high quality datasets, to connect with others and to share knowledge.
 
-Ultimately, we want to revolutionize how we work with data as a community. How we collaborate to create and curate datasets. We want to make it faster, easier and more reliable to use and share high quality data and [data-driven] insight.
+Ultimately, we want to revolutionize how we work with data as a community. How we collaborate to find, create and curate datasets. We want to make it faster, easier and more reliable to use and share high quality data and data-driven insight.
 
 And, finally, to do this we are committed to building a thriving, sustainable business that treats its members, users and community fairly, transparently and integrously.
 
