@@ -94,8 +94,11 @@ not intended to be comprehensive but is more at the electic end of the spectrum.
 
 ### Desktop
 
-All spreadsheet programmes including Excel, OpenOffice, Google Docs
-Spreadsheets supporting opening, editing and saving CSVs.
+All spreadsheet programmes including Excel, OpenOffice, Google Docs Spreadsheets supporting opening, editing and saving CSVs.
+
+A good dedicated, lightweight CSV viewer (that can be booted from the command line) is [Tad viewer][tad].
+
+[tad]: https://www.tadviewer.com/
 
 ### View a CSV file in your Browser
 
@@ -116,6 +119,9 @@ See
 
 * Using [unix command line tools on CSV][cldw]
 * The wonderful [csvkit][] (python)
+* [xsv][] is a command line program for inspecting, indexing, slicing, analyzing, splitting and joining CSV files that is specially designed to be fast and handle large files
+
+[xsv]: https://github.com/BurntSushi/xsv
 
 ### Power Tools
 
