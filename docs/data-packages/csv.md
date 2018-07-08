@@ -120,7 +120,9 @@ See
 * Using [unix command line tools on CSV][cldw]
 * The wonderful [csvkit][] (python)
 * [xsv][] is a command line program for inspecting, indexing, slicing, analyzing, splitting and joining CSV files that is specially designed to be fast and handle large files
+* [visidata] - the clarity of a spreadsheet, the efficiency of the terminal, and the power of Python, into a lightweight utility which can handle millions of rows with ease.
 
+[visidata]: https://github.com/saulpw/visidata
 [xsv]: https://github.com/BurntSushi/xsv
 
 ### Power Tools
