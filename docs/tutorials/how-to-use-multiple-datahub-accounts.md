@@ -14,7 +14,7 @@ cat ~/.config/datahub/config.json
 
 and you'd get following output:
 
-```cli-output
+```json
 {
     "token": "your-token",
     "profile": {
@@ -37,7 +37,7 @@ ls ~/.config/datahub/
 
 you'd get:
 
-```cli-output
+```bash
 my.json    org.json
 ```
 
