@@ -19,7 +19,7 @@ Everyone who has worked with data as much as we have, knows it takes far too man
 
 We want to change that – both for ourselves and everyone else.
 
-For over a decade we've been creating tools and applications for data. We built CKAN, the world's leading data portal platform that powers sites like [data.gov](http://data.gov/) and [data.gov.uk](http://data.gov.uk/). We've worked for companies and organizations like Google. We've helped create the open data movement from the ground up.
+DataHub began as a project by Datopian and Open Knowledge International. For over a decade we've been creating tools and applications for data. We built CKAN, the world's leading data portal platform that powers sites like [data.gov](http://data.gov/) and [data.gov.uk](http://data.gov.uk/). We've worked for companies and organizations like Google. We've helped create the open data movement from the ground up.
 
 Our work on the DataHub is the culmination of everything we've done so far, and the distillation of everything we've learnt.
 
