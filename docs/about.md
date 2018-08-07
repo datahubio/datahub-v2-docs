@@ -1,5 +1,6 @@
 ---
 title: About DataHub
+editable: false
 ---
 
 <h3 style="text-align: center; margin-bottom: 40px;">
