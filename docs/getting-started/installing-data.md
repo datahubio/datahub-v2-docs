@@ -92,7 +92,7 @@ The `info` command provides info on a data file or dataset whether it is on the 
 data info https://datahub.io/core/finance-vix/datapackage.json
 ```
 
-It should something like this:
+It should look something like this:
 
 ```cli-output
 CBOE Volatility Index (VIX) time-series dataset including daily open, close,
