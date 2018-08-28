@@ -137,12 +137,13 @@ My important message here.
 
 ### CLI output
 
-Sometimes you might need to display how a CLI result, especially, if you're writing a tutorial about data wrangling. In such situation, you could use code blocks like below:
+Sometimes you might need to display how a CLI result, especially, if you're writing a tutorial about data wrangling. In such situation, you could use code blocks like below (use backticks instead of single quotes):
 
 ```
-```cli-output
+'''cli-output
 This is printed in the CLI
-``````
+'''
+```
 
 and this is how it would be rendered:
 
