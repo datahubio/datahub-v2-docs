@@ -22,23 +22,20 @@ Imagine a situation such as the following:
 The Data Package approach provides a **very simple**, **web friendly**,
 **standardized** and **extensible**, way for you to do this.
 
-<div class="row">
-<div class="span2">
-<h3>Full Spec</h3>
-There is a full <b><a href="https://frictionlessdata.io/specs/data-package/">RFC-style specification of Data Package format</a></b>
+### Full Spec
+
+There is a full **[RFC-style specification of Data Package format](https://frictionlessdata.io/specs/data-package/)**
 on the Frictionless Data website to complement this quick introduction.
-</div>
-<div class="span2">
-<h3>Tabular Data</h3>
-<b><a href="/docs/data-packages/tabular/">Tabular Data Package</a></b> extends Data Packages for tabular data. It supports providing additional information such as data types
+
+### Tabular Data
+
+**[Tabular Data Package](/docs/data-packages/tabular/)** extends Data Packages for tabular data. It supports providing additional information such as data types
 of columns.
-</div>
-<div class="span2">
-<h3>Tools</h3>
-There is a growing set of <a href="/tools">online and offline tools</a> for working with Data
+
+### Tools
+
+There is a growing set of [online and offline tools](https://frictionlessdata.io/software/) for working with Data
 Packages including for creating, viewing and validating.
-</div>
-</div>
 
 ## Getting Started
 
@@ -79,17 +76,17 @@ minimal example of a `datapackage.json` file:
 
 Here is a much more extensive example of a datapackage JSON file:
 
-<div class="alert alert-info">
-<b>Note:</b> a complete list of potential attributes and their meaning can be found in the
+:::info
+**Note:** a complete list of potential attributes and their meaning can be found in the
 [full Data Package spec][spec].
-</div>
+:::
 
 [spec]: https://frictionlessdata.io/specs/data-package/
 
-<div class="alert alert-info">
-<b>Note:</b> the Data Package format is <b>extensible</b> in that it allows you add
+:::info
+**Note:** the Data Package format is **extensible** in that it allows you add
 your own attributes to the `datapackage.json`
-</div>
+:::
 
     {
       "name": "a-unique-human-readable-and-url-usable-identifier",
@@ -130,7 +127,7 @@ your own attributes to the `datapackage.json`
       "my-own-attribute": "data-packages-are-awesome",
     }
 
-<h3 id="resources">Resources</h3>
+### Resources
 
 You list data files in the resources entry of the datapackage.json.
 
@@ -141,7 +138,7 @@ You list data files in the resources entry of the datapackage.json.
       path: "online url" # e.g http://mysite.org/some-data.csv
     }
 
-<h3 id="views">Views</h3>
+### Views
 
 The [Data Package Viewer](http://data.okfn.org/tools/view) will display a [Recline Dataset Graph View](http://okfnlabs.org/recline/docs/views.html) when a `views` entry is provided in the datapackage.json.
 
@@ -174,10 +171,10 @@ There is a growing set of [online and offline tools][tools] for working with Dat
 Packages including tools for creating, viewing, validating, publishing and
 managing Data Packages. See the [Data Package tools page for more][tools].
 
-[tools]: /tools/
+[tools]: https://frictionlessdata.io/software/
 
 
-<h2 id="examples">Examples</h2>
+## Examples
 
 Many exemplar data packages can be found in the [datasets organization on
 github][datasets]. Specific examples:
@@ -190,21 +187,10 @@ A Data Package which includes the data locally in the repo (data is CSV).
 
 ### [S&P 500 Companies Data][sp500]
 
-[sp500]: https://github.com/datasets/s-and-p-500-companies
-
 This is an example with more than one resource in the data package.
 
 <script src="http://gist-it.appspot.com/github/datasets/s-and-p-500-companies/blob/master/datapackage.json"></script>
 
-### [TopoJSON example][topojson]
-
-This data package has TopoJSON and the data is external to the repo.
-
-<script src="http://gist-it.appspot.com/github/datasets/ex-topojson/blob/master/datapackage.json"></script>
-
 [datasets]: https://github.com/datasets
 [World GDP]: https://github.com/datasets/gdp
-[ISO 3166-2 country codes]: https://github.com/datasets/country-codes
-[topojson]: https://github.com/datasets/ex-topojson
-
-</div>
+[sp500]: https://github.com/datasets/s-and-p-500-companies
