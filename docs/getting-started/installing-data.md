@@ -28,6 +28,12 @@ chmod +x data-macos
 mv data-macos /usr/local/bin/data
 ```
 
+:::info
+If you have an error message saying `no such file or directory`, you might need to create a directory in your `/usr/local/` by running:
+
+`mkdir /usr/local/bin`
+:::
+
 ## Linux
 
 ```bash
