@@ -59,7 +59,7 @@ Format][sdf] specs.
 
 **Option 3:*** Use our [Data Package Manager][dpm] tool for the command line if you are comfortable with that interface (requires node.js).
 
-[creator]: http://data.okfn.org/tools/create
+[creator]: https://create.frictionlessdata.io/
 [JSON]: http://en.wikipedia.org/wiki/JSON
 [dp]: http://datahub.io/docs/data-packages
 [dpm]:  https://github.com/okfn/dpm
