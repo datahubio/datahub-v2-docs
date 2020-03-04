@@ -14,7 +14,7 @@ With the proliferation of internet one cannot escape the overwhelming informatio
 
 Let's say that you obtained data about pharmaceutical drug spending by countries and that you already have it saved in a [comma separated values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV) file.
 
-You wish to present the data to the appropriate audience and csv format is great for tabular representation. The user can clearly see what ammount in which year has the country spent on pharmaceuticals. But there are things that csv file can't show us. We don't know for example if in the column **TIME** there are only integer type years like 1972 or will we find something like April 1972 which is string.
+You wish to present the data to the appropriate audience and csv format is great for tabular representation. The user can clearly see what amount in which year has the country spent on pharmaceuticals. But there are things that csv file can't show us. We don't know for example if in the column **TIME** there are only integer type years like 1972 or will we find something like April 1972 which is string.
 
 Users also may want to see:
 - general description of the data
