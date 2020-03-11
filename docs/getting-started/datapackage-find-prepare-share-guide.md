@@ -6,18 +6,18 @@ authors: Dmytro Gierman, Branko Djordjevic
 
 **In this guide, we describe a way to gather information and make it presentable and easy to use for your customers.**
 
-Over time we've seen an increase in the adoption of the internet, with so much information available to us it can quickly become overwhelming. With this enormous data, numerous opportunities exist for those that can make sense of these datasets and present them in a clear and succinct manner.
+[dp]: https://datahub.io/docs/data-packages
 
+We'll introduce the concept of [Data Packages][dp] and walkthrough how to get data manually or using automated processes, clean it up, create a data package and finally share it online using datahub.io.
 
 [[toc]]
 
 # What is Data Package
 
-Let's say that you obtained data about pharmaceutical drug spending by countries and that you already have it saved in a [comma separated values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV) file.
+[csv]: https://datahub.io/docs/data-packages/csv
 
-You wish to present the data to the appropriate audience and CSV format is great for tabular representation. The user can see what amount in which year has the country spent on pharmaceuticals. But there are things that CSV file can't show us. We don't know for example if in the column **TIME** there are only integer type years like 1972 or will we find something like April 1972 which is string?
+[CSV][csv] (or Excel) is a good format for presenting tabular data, for example a user of your data can clearly see the amount each country spent on pharmaceuticals in a given year. However, there are things that the CSV file doesn't show. For example, we don't know the:
 
-Users also may want to see:
 - general description of the data
 - information about the sources 
 - license information
@@ -25,7 +25,9 @@ Users also may want to see:
 
 All this information is called **metadata** and should be stored alongside with the data to make the information frame around the raw data you have, so users could understand the context.
 
-[**Data Package**](https://datahub.io/docs/data-packages) - *is a data plus a meta-information about it.*
+And this is where [**Data Package**][dp] comes in. 
+
+ [**Data Package**][dp] - *is a data plus a meta-information about it.*
 
 Data Package is a simple container format used to describe and package a collection of data. The format provides a simple contract for data interoperability that supports frictionless delivery, installation and management of data.
 
