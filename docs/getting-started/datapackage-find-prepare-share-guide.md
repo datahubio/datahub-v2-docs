@@ -4,19 +4,15 @@ date: 2018-04-26
 authors: Dmytro Gierman, Branko Djordjevic
 ---
 
-**In this guide, we describe a way to gather information and make it presentable and easy to use for your customers.**
-
-[dp]: https://datahub.io/docs/data-packages
-
-We'll introduce the concept of [Data Packages][dp] and walkthrough how to get data manually or using automated processes, clean it up, create a data package and finally share it online using datahub.io.
+**In this guide we walk through creating a data package from scratch and publishing to the DataHub. As a bonus, we'll also show you how to collect data and clean up before packing it for publication.**
 
 [[toc]]
 
 # What is Data Package
+[csv]: /docs/data-packages/csv
+Let's say that you obtained data about pharmaceutical drug spending by countries and that you already have it saved in a [comma separated values][csv] (CSV) file.
 
-[csv]: https://datahub.io/docs/data-packages/csv
-
-[CSV][csv] (or Excel) is a good format for presenting tabular data, for example a user of your data can clearly see the amount each country spent on pharmaceuticals in a given year. However, there are things that the CSV file doesn't show. For example, we don't know the:
+[CSV][csv] (or Excel) is a good format for presenting tabular data, for example the user of your data can clearly see the amount each country spent on pharmaceuticals in a given year. However, there are things that the CSV file doesn't show. For example, we don't know the:
 
 - general description of the data
 - information about the sources 
@@ -25,9 +21,10 @@ We'll introduce the concept of [Data Packages][dp] and walkthrough how to get da
 
 All this information is called **metadata** and should be stored alongside with the data to make the information frame around the raw data you have, so users could understand the context.
 
+[dp]: /docs/data-packages
 And this is where [**Data Package**][dp] comes in. 
 
- [**Data Package**][dp] - *is a data plus a meta-information about it.*
+[**Data Package**][dp] - *is a data plus a meta-information about it.*
 
 Data Package is a simple container format used to describe and package a collection of data. The format provides a simple contract for data interoperability that supports frictionless delivery, installation and management of data.
 
