@@ -53,6 +53,4 @@ Here's what you need to know when you sign up:
 * **Location**: all activity will be carried out online so you can be based anywhere in the world
 * **Skills**: see above
 
-To register your interest fill in the following form.
-
-<iframe src="https://docs.google.com/forms/d/1d9chMK0jU9CJs0_mnK_JQU9iIJocjm7AEp0ZM5eSiNg/viewform?embedded=true" width="620" height="1425" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+To register your interest please get in touch via the issue tracker here https://github.com/datasets/awesome-data/issues
