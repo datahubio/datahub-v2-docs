@@ -62,7 +62,7 @@ Format][sdf] specs.
 [creator]: https://create.frictionlessdata.io/
 [JSON]: http://en.wikipedia.org/wiki/JSON
 [dp]: http://datahub.io/docs/data-packages
-[dpm]:  https://github.com/okfn/dpm
+[dpm]:  https://datahub.io/docs/features/data-cli
 [sdf]: /docs/data-packages/tabular
 
 ### 4. Put the data package online
